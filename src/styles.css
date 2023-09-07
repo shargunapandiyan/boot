@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+body{padding:25px}
+.card-top{
+    margin-top: 150px;
+}
+.card-top-register{
+    margin-top: 80px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

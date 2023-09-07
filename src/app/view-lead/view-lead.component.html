@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+  <div>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+       <ng-container matColumnDef="position">
+         <th mat-header-cell *matHeaderCellDef> No. </th>
+         <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+       </ng-container>
+     
+       <ng-container matColumnDef="name">
+         <th mat-header-cell *matHeaderCellDef> Name </th>
+         <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+       </ng-container>
+
+       <ng-container matColumnDef="Company name">
+           <th mat-header-cell *matHeaderCellDef> Company name </th>
+           <td mat-cell *matCellDef="let element"> {{element.Companyname}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="email">
+           <th mat-header-cell *matHeaderCellDef> email </th>
+           <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+         </ng-container>
+    
+         <ng-container matColumnDef="mobile">
+           <th mat-header-cell *matHeaderCellDef> mobile </th>
+           <td mat-cell *matCellDef="let element"> {{element.mobile}} </td>
+         </ng-container>
+         
+         <ng-container matColumnDef="project value">
+           <th mat-header-cell *matHeaderCellDef> project value </th>
+           <td mat-cell *matCellDef="let element"> {{element.projectvalue}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="status">
+           <th mat-header-cell *matHeaderCellDef> status </th>
+           <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+         </ng-container>
+        <p>
+         <ng-container matColumnDef="edit">
+           <th mat-header-cell *matHeaderCellDef> edit </th>
+           <td mat-cell *matCellDef="let element"><mat-icon matSuffix>mode_edit</mat-icon> </td>
+         </ng-container></p>
+
+         <ng-container matColumnDef="delete">
+           <th mat-header-cell *matHeaderCellDef> delete </th>
+           <td mat-cell *matCellDef="let element"> <button  mat-fab color="primary" aria-label="Example icon button with a delete icon">
+               <mat-icon>delete</mat-icon>
+             </button> </td>
+         </ng-container>
+
+       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+     </table>
+   </div>
+  

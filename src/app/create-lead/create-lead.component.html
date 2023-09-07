@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<div class="row dashboard-layout-fix">
+    <div class="col-md-6 col-sm-12 offset-md-3 " >
+        <div class="card" >        
+            <div class="card-body">
+                <h5 class="card-title text-center display-5">Create Lead</h5>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="Name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="Name" placeholder="Name">
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="CName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="CName" placeholder="Company Name">
+                              </div>
+                        </div>
+                        <div class="col-md-6"><div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                          </div></div>
+                        <div class="col-md-6"><div class="mb-3">
+                            <label for="Mobile" class="form-label">Mobile</label>
+                            <input type="email" class="form-control" id="Mobile" placeholder="Mobile">
+                          </div></div>
+                        <div class="col-md-6"><div class="mb-3">
+                            <label for="value" class="form-label">Project Value</label>
+                            <input type="text" class="form-control" id="value" placeholder="Project Value">
+                          </div></div>
+                        <div class="col-md-6">
+                            <label for="value" class="form-label">Select Status</label>
+                            <select class="form-select" aria-label="Default select example">
+                            <option selected>Status</option>
+                            <option value="Approved">Approved</option>
+                            <option value="Rejected">Rejected</option>
+                            <option value="Pending">Pending</option>
+                          </select></div>
+                    </div>
+                      <p class="text-center">
+                        <button type="button" class="btn btn-primary" routerLink="/viewlead">Create Lead</button>
+                      </p>                        
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
